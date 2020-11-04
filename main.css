@@ -1,0 +1,47 @@
+
+body {
+    background-color: lightcyan;
+}
+    img {
+        display: inline-block;
+        width: 48%;
+        object-fit: contain;
+        float: left;
+        margin-top: 200px;
+        
+    }
+
+    div {
+        display: inline-block;
+        width: 48,5%; 
+        float: left;
+        
+    }
+        h1 {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+        }
+        p {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+        }
+        p {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+
+    
