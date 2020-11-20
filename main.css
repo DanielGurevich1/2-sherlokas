@@ -1,27 +1,26 @@
 
 body {
     display: grid;
-    grid-template-columns: 5fr 300px 60px 400px 5fr;
+    grid-template-columns: 1fr 300px 60px 400px 1fr;
+    grid-template-areas: ". paveiksliukas . tekstas .";
     background-color (234, 235, 237);
 }
     img {
+        grid-area: paveiksliukas;
         display: inline-block;
         height: 700px;
         width: 100%;
-        object-fit: contain;
-        margin-left: 20%;
-        grid-column: 2 / 3;
-        
+         object-fit: contain;        
     }
 
     div {
+        grid-area: tekstas;
         display: inline-block;
         width: 100%; 
         text-align: center;
         margin: 0;
-        margin-top: 200px;
+        margin-top: 180px;
         font-size: 24px;
-        grid-column: 4 / 5;
         
     }
         h1 {
@@ -51,11 +50,16 @@ body {
  @media (max-width: 700px) {
     body {
         
-        grid-template-columns: 20px calc(100% - 40px) 20px;
-        
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-areas: 
+        ". tekstas ."
+        ". paveiksliukas .";
     }    
         div {
             
+            grid-column: 2/3;
+        }
+        img {
             grid-column: 2/3;
         }
     }
